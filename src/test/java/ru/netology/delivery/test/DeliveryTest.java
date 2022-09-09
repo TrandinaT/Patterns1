@@ -29,7 +29,7 @@ class DeliveryTest {
     @Test
     @DisplayName("Should successful plan and replan meeting")
     void successfulMeeting() throws InterruptedException{
-        var validUser = DataGenerator.Registration.generateUser("ru");
+        var validUser = DataGenerator.registration.generateUser("ru");
         var daysToAddForFirstMeeting = 4;
         var firstMeetingDate = DataGenerator.generateDate(daysToAddForFirstMeeting);
         var daysToAddForSecondMeeting = 7;
